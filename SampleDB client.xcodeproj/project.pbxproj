@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A78110782F04F8690077240F /* Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78110772F04F8690077240F /* Shared.xcframework */; };
+		A78110792F04F8690077240F /* Shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78110772F04F8690077240F /* Shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7DDC67C2F024C79003AAEE4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A73409322EFBE607008A0D69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +29,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A781107A2F04F8690077240F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A78110792F04F8690077240F /* Shared.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C7B8932EFBE778006417A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A73409242EFBE605008A0D69 /* SampleDB client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleDB client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73409312EFBE607008A0D69 /* SampleDB clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleDB clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A734093B2EFBE607008A0D69 /* SampleDB clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleDB clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78110772F04F8690077240F /* Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Shared.xcframework; path = ../../AndroidStudioProjects/SampleDB/shared/build/XCFrameworks/release/Shared.xcframework; sourceTree = "<group>"; };
+		A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78110782F04F8690077240F /* Shared.xcframework in Frameworks */,
+				A7DDC67C2F024C79003AAEE4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +112,7 @@
 				A73409262EFBE605008A0D69 /* SampleDB client */,
 				A73409342EFBE607008A0D69 /* SampleDB clientTests */,
 				A734093E2EFBE607008A0D69 /* SampleDB clientUITests */,
+				A7C7B88F2EFBE778006417A3 /* Frameworks */,
 				A73409252EFBE605008A0D69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +127,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A7C7B88F2EFBE778006417A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78110772F04F8690077240F /* Shared.xcframework */,
+				A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +146,7 @@
 				A73409202EFBE605008A0D69 /* Sources */,
 				A73409212EFBE605008A0D69 /* Frameworks */,
 				A73409222EFBE605008A0D69 /* Resources */,
+				A781107A2F04F8690077240F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +169,7 @@
 				A734092D2EFBE607008A0D69 /* Sources */,
 				A734092E2EFBE607008A0D69 /* Frameworks */,
 				A734092F2EFBE607008A0D69 /* Resources */,
+				A7C7B8932EFBE778006417A3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62UJ62HW4Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62UJ62HW4Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

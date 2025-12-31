@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Shared
 
 @main
 struct SampleDB_clientApp: App {
+    init() {
+            KoinKt.doInitKoinIos()
+        }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserListView()
         }
     }
 }
