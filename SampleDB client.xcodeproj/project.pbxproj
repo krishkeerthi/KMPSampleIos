@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A78110782F04F8690077240F /* Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78110772F04F8690077240F /* Shared.xcframework */; };
-		A78110792F04F8690077240F /* Shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78110772F04F8690077240F /* Shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A78110A02F06CF760077240F /* Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A781109F2F06CF760077240F /* Shared.xcframework */; };
+		A78110A12F06CF760077240F /* Shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A781109F2F06CF760077240F /* Shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7DDC67C2F024C79003AAEE4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A781107A2F04F8690077240F /* Embed Frameworks */ = {
+		A78110A22F06CF760077240F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A78110792F04F8690077240F /* Shared.xcframework in Embed Frameworks */,
+				A78110A12F06CF760077240F /* Shared.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 		A73409242EFBE605008A0D69 /* SampleDB client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleDB client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73409312EFBE607008A0D69 /* SampleDB clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleDB clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A734093B2EFBE607008A0D69 /* SampleDB clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SampleDB clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A78110772F04F8690077240F /* Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Shared.xcframework; path = ../../AndroidStudioProjects/SampleDB/shared/build/XCFrameworks/release/Shared.xcframework; sourceTree = "<group>"; };
+		A781109F2F06CF760077240F /* Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Shared.xcframework; path = ../../AndroidStudioProjects/SampleDB/shared/build/XCFrameworks/release/Shared.xcframework; sourceTree = "<group>"; };
 		A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78110782F04F8690077240F /* Shared.xcframework in Frameworks */,
+				A78110A02F06CF760077240F /* Shared.xcframework in Frameworks */,
 				A7DDC67C2F024C79003AAEE4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +130,7 @@
 		A7C7B88F2EFBE778006417A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A78110772F04F8690077240F /* Shared.xcframework */,
+				A781109F2F06CF760077240F /* Shared.xcframework */,
 				A7DDC67B2F024C79003AAEE4 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
@@ -146,7 +146,7 @@
 				A73409202EFBE605008A0D69 /* Sources */,
 				A73409212EFBE605008A0D69 /* Frameworks */,
 				A73409222EFBE605008A0D69 /* Resources */,
-				A781107A2F04F8690077240F /* Embed Frameworks */,
+				A78110A22F06CF760077240F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

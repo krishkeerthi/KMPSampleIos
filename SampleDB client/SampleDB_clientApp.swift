@@ -15,7 +15,7 @@ struct SampleDB_clientApp: App {
         }
     var body: some Scene {
         WindowGroup {
-            UserListView()
+            UserListScreen()
         }
     }
 }
